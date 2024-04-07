@@ -1,4 +1,4 @@
-yarn
+
 @fsouza/prettierd
 eslint_d
 bash-language-server
