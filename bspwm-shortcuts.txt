@@ -1,12 +1,8 @@
- + Enter     = kitty
- + Space     = rofi
- + b         = chromium
- + ESC       = reload sxhkd
- + Alt + q/r = quit/reload bspwm
- + w         = close 
- + m         = maximize layout 
- + f         = fullscreen
- + g         = swap current and biggest window
+ + n     = kitty
+ + j         = firefox
+ + ESC       = wlogout
+ + q = close  
+ + g         = fullscreen
  + h/j/k/l   = change focus
  + p/b/,/.   = focus parent, brother, first, last
  + c/C       = focus next, Previous window
@@ -15,22 +11,8 @@
  + o/n       = focus older, newer node
  + 1-8       = focus 1 - 8 desktop
 
- + Ctrl + h/j/k/l       = preselect position
- + Ctrl + 1-9           = preselect ratio
- + Ctrl + Space         = cancel preselect position for node
- + Ctrl + Shift + Space = cancel preselect position for desktop
+ + b         = bluetooth control
 
- + Ctrl + s  = shutdown 
- + Ctrl + r  = restart 
+princtscreen   = Screenshot 
 
- + Shift + x   = lockscreen 
- + Shift + d/a = move window forward, backward 
- + Alt + m/./, = volume mute/decrese/increase 5%
- + Alt + b     = bluetooth control
-
- + Alt + h/j/k/l         = resize window outward
- + Alt + Shift + h/j/k/l = resize window inward
- + Arrows                = move floating window
- + Alt + Space           = change bangla/english keyboard
-
-Ctrl + Shift + 5   = Screenshot
+ + princtscreen   = Screenshot of a monitor
