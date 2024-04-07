@@ -31,9 +31,10 @@
         "cpu",
         "pulseaudio",
         "battery",
+        "hyprland/language",
         "clock#date",
         "clock#time",
-        "tray"
+        "tray",
     ],
 
 
@@ -92,9 +93,16 @@
       "tooltip": false
     },
 
+	"hyprland/language": {
+	    "format": "{}",
+	    "format-en": "EN",
+	    "format-uk": "UA",
+	},
+    
+
     "memory": {
         "interval": 5,
-        "format": "  {}%", // Icon: memory
+        "format": "   {}%", // Icon: memory
         "states": {
             "warning": 70,
             "critical": 90
@@ -109,10 +117,6 @@
         "tooltip-format": "{ifname}: {ipaddr}"
     },
 
-    "hyprland/mode": {
-        "format": "<span style=\"italic\">  {}</span>", // Icon: expand-arrows-alt
-        "tooltip": false
-    },
 
     "hyprland/window": {
         "format": "{}",
@@ -133,8 +137,8 @@
         "format-muted": " 0%",
         "format-icons": {
             "headphones": "",
-            "handsfree": "",
-            "headset": "",
+            "handsfree": "",
+            "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
