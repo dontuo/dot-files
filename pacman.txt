@@ -24,3 +24,8 @@ git
 vesktop
 waybar
 hyprland
+xdg-desktop-portal-hyprland-git waybar mako wofi pipewire wireplumber grim slurp pipewire-audio pipewire-pulse wl-clipboard
+wayvnc
+wireplumber
+hyprpaper
+zerotier-one
