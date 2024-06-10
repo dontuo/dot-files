@@ -8,5 +8,5 @@
 - **IDE** • [Neovim](https://neovim.io/) nvim like IDE
 
 
-![alt text](example/example1.png)
-![alt text](example/example2.png)
+![screenshots](example/example1.png)
+![screenshots](example/example2.png)
