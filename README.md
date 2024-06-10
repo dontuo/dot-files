@@ -6,3 +6,7 @@
 - **Launcher** • [Wofi](https://sr.ht/~scoopta/wofi/)
 - **File Manager** • [thunar](https://github.com/xfce-mirror/thunar) file manager
 - **IDE** • [Neovim](https://neovim.io/) nvim like IDE
+
+
+![alt text](images/example1.png)
+![alt text](images/example2.png)
