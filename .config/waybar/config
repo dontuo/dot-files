@@ -64,7 +64,7 @@
 
     "clock#time": {
         "interval": 1,
-        "format": "{:%r}",
+        "format": "{:%H:%M:%S}",
         "tooltip": false
     },
 
@@ -112,7 +112,7 @@
     "network": {
         "interval": 5,
         "format-wifi": "  {essid}", // Icon: wifi
-        "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
+        "format-ethernet": "  {ifname}", // Icon: ethernet
         "format-disconnected": "⚠  Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}"
     },

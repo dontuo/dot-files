@@ -1,18 +1,0 @@
- + n     = kitty
- + j         = firefox
- + ESC       = wlogout
- + q = close  
- + g         = fullscreen
- + h/j/k/l   = change focus
- + p/b/,/.   = focus parent, brother, first, last
- + c/C       = focus next, Previous window
- + u/i       = focus previous, next desktop
- + tab       = focus last desktop
- + o/n       = focus older, newer node
- + 1-8       = focus 1 - 8 desktop
-
- + b         = bluetooth control
-
-princtscreen   = Screenshot 
-
- + princtscreen   = Screenshot of a monitor
