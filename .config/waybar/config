@@ -31,9 +31,10 @@
         "cpu",
         "pulseaudio",
         "battery",
+        "hyprland/language",
         "clock#date",
         "clock#time",
-        "tray"
+        "tray",
     ],
 
 
@@ -63,7 +64,7 @@
 
     "clock#time": {
         "interval": 1,
-        "format": "{:%r}",
+        "format": "{:%H:%M:%S}",
         "tooltip": false
     },
 
@@ -92,9 +93,16 @@
       "tooltip": false
     },
 
+	"hyprland/language": {
+	    "format": "{}",
+	    "format-en": "EN",
+	    "format-uk": "UA",
+	},
+    
+
     "memory": {
         "interval": 5,
-        "format": "  {}%", // Icon: memory
+        "format": "   {}%", // Icon: memory
         "states": {
             "warning": 70,
             "critical": 90
@@ -103,16 +111,12 @@
 
     "network": {
         "interval": 5,
-        "format-wifi": "  {essid}  {bandwidthUpBits}  {bandwidthDownBits}", // Icon: wifi
-        "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
+        "format-wifi": "  {essid}", // Icon: wifi
+        "format-ethernet": "  {ifname}", // Icon: ethernet
         "format-disconnected": "⚠  Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}"
     },
 
-    "hyprland/mode": {
-        "format": "<span style=\"italic\">  {}</span>", // Icon: expand-arrows-alt
-        "tooltip": false
-    },
 
     "hyprland/window": {
         "format": "{}",
@@ -133,8 +137,8 @@
         "format-muted": " 0%",
         "format-icons": {
             "headphones": "",
-            "handsfree": "",
-            "headset": "",
+            "handsfree": "",
+            "headset": "",
             "phone": "",
             "portable": "",
             "car": "",

@@ -1,32 +1,25 @@
 #!/bin/bash
 
+
 # Install packages
 sudo pacman -S --noconfirm --needed - <pacman.txt
-yay -S --noconfirm - <yay.txt
 
-# Npm packages
-cat npm.txt | xargs -L1 npm i -g
+mkdir .config/
+mkdir ~/Pictures
+# move dot-files to .config folder
+cp -r .config/* ~/.config/
+cp .bashrc ~
+cp -r wallpapers/ ~/Pictures/
 
-# install fisher
-curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 
-# install awesome widgets
-cd ~/.config/awesome
-gh repo clone streetturtle/awesome-wm-widgets
-cd ~/
 
-# Add new config folder here
-config_folders=("bspwm" "dunst" "fish" "kitty" "nvim" "picom" "polybar" "rofi" "sxhkd" "zathura" "starship.toml")
-base_dir="${HOME}/.config/"
+#installing yay
+sudo pacman -S --needed htop btop blueman bluez-utils thunar kitty lazygit neofetch neovim qbittorrent ttf-font-awesome ttf-terminus-nerd vlc pulseaudio pipewire git xdg-desktop-portal-hyprland-git wofi pipewire  grim slurp pipewire-audio pipewire-pulse wireplumber wl-clipboard hyprland waybar zerotier-one wayvnc neovide pavucontrol firefox
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -si
 
-for folder in "${config_folders[@]}"; do
-	find "$base_dir$folder" -maxdepth 1 -mindepth 1 -exec cp -r {} "$base_dir" \;
-done
+yay -S --noconfirm --needed wlogout swww waypaper
+ 
 
-# nnn plugins install
-sh -c "$(curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs)"
 
-# Set zathura as default pdf reader
-xdg-mime default org.pwmt.zathura.desktop application/pdf
-
-fish
