@@ -1,0 +1,14 @@
+ + n     = kitty
+ + j         = firefox
+ + s         = steam
+ + y         = youtube music
+ + ESC       = wlogout
+ + q = close  
+ + g         = fullscreen
+ + 1-9       = focus 1 - 8 desktop
+
+ + b         = bluetooth control
+
+princtscreen   = Screenshot 
+
+ + princtscreen   = Screenshot of a monitor
