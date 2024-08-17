@@ -14,7 +14,8 @@ cp -r wallpapers/ ~/Pictures/
 
 
 #installing yay
-sudo pacman -S --needed htop btop blueman bluez-utils thunar kitty lazygit neofetch neovim qbittorrent ttf-font-awesome ttf-terminus-nerd vlc pulseaudio pipewire git xdg-desktop-portal-hyprland-git wofi pipewire  grim slurp pipewire-audio pipewire-pulse wireplumber wl-clipboard hyprland waybar zerotier-one wayvnc neovide pavucontrol firefox
+
+pacman -Rsu $(comm -23 <(pacman -Qq | sort) <(sort pacman.txt))
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
