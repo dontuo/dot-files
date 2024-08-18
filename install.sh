@@ -20,8 +20,14 @@ cd yay-bin
 makepkg -si
 
 #installing packages
-yay -Rsu $(comm -23 <(yay -Qq | sort) <(sort pacman.txt))
-pacman -Rsu $(comm -23 <(pacman -Qq | sort) <(sort pacman.txt))
+sudo pacman -Syu --noconfirm
+
+sudo pacman -S --noconfirm --needed - <pacman.txt
+yay -S --noconfirm - <yay.txt
+
+# Install packages from the list
+#yay -Rsu $(comm -23 <(yay -Qq | sort) <(sort pacman.txt))
+#pacman -Rsu $(comm -23 <(pacman -Qq | sort) <(sort pacman.txt))
  
 
 
