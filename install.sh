@@ -29,6 +29,7 @@ sudo pacman -Syu --noconfirm
 sudo pacman -S --needed $(comm -12 <(pacman -Slq | sort) <(sort pkglist.txt))
 sudo yay -S --needed $(comm -12 <(yay -Slq | sort) <(sort pkglist.txt))
 
+yay -S swww waypaper
 #yay -Rsu $(comm -23 <(yay -Qq | sort) <(sort pacman.txt))
 #pacman -Rsu $(comm -23 <(pacman -Qq | sort) <(sort pacman.txt))
  
