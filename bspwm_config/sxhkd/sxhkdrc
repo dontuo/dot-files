@@ -1,0 +1,75 @@
+
+# launch applications
+super + n
+    kitty
+
+super + j
+    firefox
+
+super + d
+    dmenu_run
+
+super + y
+    youtube-music --class floating
+
+# window control
+super + q
+    bspc node -c
+
+super + g
+    bspc node -t ~fullscreen
+
+super + p
+    bspc node -t ~floating
+
+# rofi
+super + r
+    sh ~/.config/rofi/launcher
+
+super + x
+    rofi -show window
+
+# for clipboard "history"
+super + c
+    clipmenu
+
+# screenshot
+Print
+    flameshot gui -c -p ~/Pictures
+
+super + Print
+    flameshot screen -n 0 -p ~/Pictures -c
+
+super + Escape
+    sh ~/.config/rofi/powermenu
+
+super + {Left,Down,Up,Right}
+    bspc node -f {west,south,north,east}
+
+# Super + Shift + R: Reload sxhkd
+super + shift + r
+    sh ~/.config/sxhkd/reload.sh
+
+super + {_,shift + ,ctrl + shift +,ctrl +}{1-9}
+    ;sh ~/.config/sxhkd/bspwm_dynamic_desktops.sh {--df,--ns,--nm,--da} {1-9}
+
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +1%
+
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -1%
+
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+XF86AudioMicMute
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+XF86AudioPlay
+    playerctl play-pause
+
+XF86AudioNext
+    playerctl next
+
+XF86AudioPrev
+    playerctl previous
